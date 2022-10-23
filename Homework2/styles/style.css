@@ -1,0 +1,115 @@
+@font-face {
+	font-family: 'Teddy Bear';
+	src: url('../fonts/teddy_bear.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/teddy_bear.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/teddy_bear.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/teddy_bear.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/teddy_bear.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/teddy_bear.svg#teddy_bear') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Teddy Bear', sans-serif;
+  background-color: #bbb1b2;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  width: 100%;
+  color: black;
+}
+
+h1, h2 {
+  margin: auto;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  margin-top: 28px;
+  padding: 0 28px;
+}
+
+.color-bg {
+  border-radius: 5px;
+  background-color: #87615f;
+  box-shadow: 0 0 10px #78706f80;
+}
+
+.color-bg:hover {
+  background-color: #675659;
+  box-shadow: none;
+}
+
+.photo {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.person-photo {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.user-name {
+  margin: auto;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.user-name-ref:hover {
+  color:  white;
+}
+
+.vk, .email, .youtube {
+  color: white;
+  height: 90px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.vk-ref, .email-ref, .youtube-ref {
+  margin: auto;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+
+.about-me {
+  text-align: center;
+}
+
+.about-me_list {
+  padding-left: 60px;
+}
