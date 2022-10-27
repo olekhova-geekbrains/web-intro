@@ -4,5 +4,5 @@ alert(`Цельсий: ${temperatureCel} Фаренгейт: ${conversion(temper
 
 function conversion(tCel) {
   tFah = (9 / 5) * tCel + 32;
-  return tFah.toFixed(1); 
+  return tFah.toFixed(1);
 }
