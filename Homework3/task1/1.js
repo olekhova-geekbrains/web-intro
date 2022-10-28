@@ -1,8 +1,8 @@
-temperatureCel = Number.parseInt(prompt("Введите температуру в градусах Цельсия: "));
-alert(`Цельсий: ${temperatureCel} Фаренгейт: ${conversion(temperatureCel)}`);
+const temperatureCel = Number.parseFloat(prompt("Введите температуру в градусах Цельсия: "));
+alert(`Цельсий: ${temperatureCel} Фаренгейт: ${conversion(temperatureCel).toFixed(1)}`);
 
 
 function conversion(tCel) {
-  tFah = (9 / 5) * tCel + 32;
-  return tFah.toFixed(1);
+  const tFah = (9 / 5) * tCel + 32;
+  return tFah;
 }

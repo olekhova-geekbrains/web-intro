@@ -1,7 +1,6 @@
-function myName(name) {
+function printHello(name) {
   console.log(`Приветствую, ${name}`);
-  return name;
 }
 
 userName = prompt("Как Вас зовут? ");
-alert(`Приветствую, ${myName(userName)}`);
+printHello(userName);
