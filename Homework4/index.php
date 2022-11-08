@@ -13,7 +13,6 @@ $skills = [
   ['name' => 'Media', 'percent' => 50],
 ];
 
-
 $workExperience = [
   [
     'jobTitle' => 'Front End Developer',
@@ -38,7 +37,6 @@ $workExperience = [
 
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Мое резюме</title>
   <meta charset="UTF-8">
@@ -49,30 +47,18 @@ $workExperience = [
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    html, body, h1, h2, h3, h4, h5, h6 {
       font-family: 'Jost', sans-serif;
     }
   </style>
 </head>
-
 <body class="w3-light-grey">
-
   <!-- Page Container -->
   <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
     <!-- The Grid -->
     <div class="w3-row-padding">
-
       <!-- Left Column -->
       <div class="w3-third">
-
         <div class="w3-white w3-text-grey w3-card-4">
           <div class="w3-display-container">
             <img src="https://imgfon.ru/Images/Details_img_880px/Animals/glaza-belyy_fon-kotik-morda-polosatyy.webp"
@@ -99,9 +85,9 @@ $workExperience = [
             <hr>
             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
             <?php
-            for ($i = 0; $i < count($skills); $i++):
-              $n = $skills[$i]['name'];
-              $p = $skills[$i]['percent'];
+              for ($i = 0; $i < count($skills); $i++):
+                $n = $skills[$i]['name'];
+                $p = $skills[$i]['percent'];
             ?>
             <p>
               <? = $n; ?>
@@ -130,10 +116,8 @@ $workExperience = [
             <br>
           </div>
         </div><br>
-
         <!-- End Left Column -->
       </div>
-
       <!-- Right Column -->
       <div class="w3-twothird">
         <div class="w3-container w3-card w3-white w3-margin-bottom">
@@ -188,16 +172,12 @@ $workExperience = [
             <p>Bachelor Degree</p><br>
           </div>
         </div>
-
         <!-- End Right Column -->
       </div>
-
       <!-- End Grid -->
     </div>
-
     <!-- End Page Container -->
   </div>
-
   <!-- Footer -->
   <footer class="w3-container w3-teal w3-center w3-margin-top">
     <p>Find me on social media.</p>
@@ -206,7 +186,5 @@ $workExperience = [
     <i class="fa fa-linkedin w3-hover-opacity"></i>
     <!-- End footer -->
   </footer>
-
 </body>
-
 </html>
