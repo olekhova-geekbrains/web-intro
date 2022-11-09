@@ -18,4 +18,4 @@ INSERT INTO classmates VALUES (0008, 'Наталия', 43, 'Хабаровск')
 INSERT INTO classmates VALUES (0009, 'Алексей', 28, 'Омск');
 
 -- fetch 
-SELECT name FROM classmates WHERE address = 'Москва' and 18 <= age and age < 30;
+SELECT name FROM classmates WHERE address = 'Москва' AND age >= 18 AND age < 30;
