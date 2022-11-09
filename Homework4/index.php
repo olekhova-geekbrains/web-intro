@@ -32,7 +32,7 @@ $workExperience = [
     'periodFinish' => 'Mar 2012',
     'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'
   ],
-]
+];
 ?>
 
 <!DOCTYPE html>
@@ -86,15 +86,15 @@ $workExperience = [
             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
             <?php
               for ($i = 0; $i < count($skills); $i++):
-                $n = $skills[$i]['name'];
-                $p = $skills[$i]['percent'];
+                $name = $skills[$i]['name'];
+                $percent = $skills[$i]['percent'];
             ?>
             <p>
-              <? = $n; ?>
+              <?= $name; ?>
             </p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
-              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $p; ?>%">
-                <?php echo $p; ?>%
+              <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $percent; ?>%">
+                <?php echo $percent; ?>%
               </div>
             </div>
             <?php endfor; ?>
@@ -121,36 +121,38 @@ $workExperience = [
       <!-- Right Column -->
       <div class="w3-twothird">
         <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
-          <div class="w3-container">
+          <h2 class="w3-text-grey w3-padding-16">
+            <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+            Опыт работы
+          </h2>
             <?php
-              for ($i = 0; $i < count($workExperience); $i++):
-                $t = $workExperience[$i]['jobTitle'];
-                $s = $workExperience[$i]['periodStart'];
-                $f = $workExperience[$i]['periodFinish'];
-                $d = $workExperience[$i]['description'];
-            ?>
-              <h5 class="w3-opacity"><b>
-                <?php echo $t; ?>
-              </b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
-                <?php echo $s; ?> - 
-                <?php if ($f == 'Current') {?>
-                  <span class="w3-tag w3-teal w3-round">
-                  <?php echo $f; ?>
-                  </span>
-                <?php 
-                } else {
-                  echo $f;
-                } ?>
-              </h6>
-              <p>
-                <?php echo $d; ?>
-              </p>
-              <hr>
+            for ($i = 0; $i < count($workExperience); $i++):
+              $title = $workExperience[$i]['jobTitle'];
+              $start = $workExperience[$i]['periodStart'];
+              $finish = $workExperience[$i]['periodFinish'];
+              $description = $workExperience[$i]['description'];
+              ?>
+              <div class="w3-container">
+                <h5 class="w3-opacity"><b>
+                  <?php echo $title; ?></b>
+                </h5>
+                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+                  <?php echo $start; ?> - 
+                  <?php if ($finish == 'Current'):?>
+                    <span class="w3-tag w3-teal w3-round">
+                      <?php echo $finish; ?>
+                    </span>
+                  <?php else: 
+                    echo $finish;
+                  endif; ?>
+                </h6>
+                <p>
+                  <?php echo $description; ?>
+                </p>
+                <hr>
+              </div>
             <?php endfor; ?>
-          </div>
+        </div>
         <div class="w3-container w3-card w3-white">
           <h2 class="w3-text-grey w3-padding-16"><i
               class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Образование</h2>
